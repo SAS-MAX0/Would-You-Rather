@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Would You Rather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <video id="videoInput" width="640" height="480" autoplay></video>
+
+    <div class="question">
+      <h1 id="question-text">Would you rather...</h1>
+    </div>
+
+    <div class="blue-side" id="blue-side">
+      <img src="assets/images/1.png" alt="Option A" class="option-image" id="blue-image">
+      <p class="option-text" id="blue-text">Do this</p>
+    </div>
+
+    <div class="red-side" id="red-side">
+      <img src="assets/images/2.png" alt="Option B" class="option-image" id="red-image">
+      <p class="option-text" id="red-text">Or do that</p>
+    </div>
+
+    <div class="or-circle">OR</div>
+  </div>
+
+=  <div id="result-card" class="result-card" style="display: none;">
+    <div class="result-content">
+      <h2>Your Result:</h2>
+      <p id="result-text"></p>
+      <button onclick="restartGame()">Restart</button>
+      <a href="index.html"><button>Home</button></a>
+    </div>
+  </div>
+
+  <script src="head tracking test.js"></script>
+  <script src="https://docs.opencv.org/master/opencv.js"></script>
+</body>
+</html>
