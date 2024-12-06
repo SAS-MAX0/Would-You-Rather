@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.question {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+}
+
+.blue-side, .red-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.blue-side {
+    background-color: blue;
+}
+
+.red-side {
+    background-color: red;
+}
+
+.option-image {
+    max-width: 70%;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.option-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.or-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.blue-side:hover, .red-side:hover {
+    transform: scale(1.05);
+}
+
+.container.overlay {
+    filter: blur(2px);
+    opacity: 0.99;
+    pointer-events: none;
+}
+
+.result-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(225, 225, 225, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    display: none;
+}
+
+.result-card.show {
+    display: block;
+}
+
+.result-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.result-card button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.result-card button:hover {
+    background-color: #f0f0f0;
+}

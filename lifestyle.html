@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Would You Rather - Lifestyle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="question">
+      <h1 id="question-text">Would you rather...</h1>
+    </div>
+    <div class="blue-side" id="blue-side">
+      <img src="assets/lifestyle/1.jpg" alt="Option A" class="option-image" id="blue-image">
+      <p class="option-text" id="blue-text">Do this</p>
+    </div>
+
+    <div class="red-side" id="red-side">
+      <img src="assets/lifestyle/2.jpg" alt="Option B" class="option-image" id="red-image">
+      <p class="option-text" id="red-text">Or do that</p>
+    </div>
+
+    <div class="or-circle">OR</div>
+    </div>
+
+  <div id="result-card" class="result-card" style="display: none;">
+    <div class="result-content">
+      <h2>Your Result:</h2>
+      <p id="result-text"></p>
+      <button onclick="restartGame()">Restart</button>
+      <a href="index.html"><button>Home</button></a>
+    </div>
+  </div>
+
+  <script src="lifestyle.js"></script>
+</body>
+</html>
+
+

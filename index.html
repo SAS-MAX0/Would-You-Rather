@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Rather - Home</title>
+    <link rel="stylesheet" href="index-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="blue-half"></div>
+            <div class="red-half"></div>
+        </div>
+
+        <header class="header">
+            <h1>Would You Rather 🫵</h1>
+            <p class="description">
+                Pick from different categories and get a feedback based on your choices
+                <br>Note: you'll have to make some tough choices
+            </p>
+        </header>
+
+        <div class="button-container">
+            <button onclick="navigateTo('lifestyle.html')">Lifestyle</button>
+            <button onclick="navigateTo('cars.html')">Cars</button>
+            <button onclick="navigateTo('games.html')">Games</button>
+            <button onclick="navigateTo('superhero.html')">Superheros</button>
+            <button onclick="navigateTo('food.html')">Food</button>
+            <button onclick="navigateTo('companies.html')">Companies</button>
+
+        </div>
+    </div>
+    
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
